@@ -1,0 +1,45 @@
+{
+  "css.validate": false,
+  // When enabled, the diff editor ignores changes in leading or trailing whitespace.
+  "diffEditor.ignoreTrimWhitespace": false,
+  // Code Action kinds to be run on save.
+  "editor.codeActionsOnSave": [
+    "source.addMissingImports",
+    "source.organizeImports",
+    "source.fixAll.eslint"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Format a file on save.
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  // Controls whether eslint is enabled or not.
+  "eslint.enable": true,
+  "eslint.experimental.useFlatConfig": true,
+  "eslint.validate": [
+    "css",
+    "html",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "markdown",
+    "typescript",
+    "typescriptreact"
+  ],
+  "files.exclude": {
+    "**/coverage": true
+  },
+  "files.watcherExclude": {
+    "**/dist": true
+  },
+  "git.enableCommitSigning": true,
+  "javascript.format.enable": true,
+  "prettier.configPath": "./.prettierrc.js",
+  // Disables automatic type acquisition. Automatic type acquisition fetches @types packages
+  // from npm to improve IntelliSense for external libraries.
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "typescript.preferences.quoteStyle": "single",
+  // Specifies the folder path to the tsserver and lib*.d.ts files under a TypeScript   
+  // install to use for IntelliSense.
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
